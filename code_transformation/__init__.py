@@ -105,7 +105,7 @@ def transformCode(
         lang = global_lang
     code = normalizeCode(code, lang=lang)
     if len(transformChain) == 7 and ("c" == lang or "cpp" == lang):
-        transformChain.pop(-2)
+        # transformChain.pop(-2)
         ####### pop AddTryCatch PermuteStatement
         transformChain.pop(-1)
     # transformChain = [PermuteStatement]

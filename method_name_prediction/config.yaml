@@ -1,0 +1,18 @@
+Dataset:
+  tokenizer_file_path: ./custom_tokenizer/method_name_prediction_10000.json
+  code_tokenizer_file_path: ./custom_tokenizer/WordPiece_tokenizer.json
+  data_dir: ./data/method_name_prediction
+
+
+Args:
+  is_ctc: True
+  do_test: True
+  local_rank: -1
+  no_cuda: False
+  seed: 1234
+  load_model_path: weight/256_layer_6_5000/checkpoint-best-f1/sim_pytorch_model.bin
+  output_dir:  weight/256_layer_6_5000/
+  eval_batch_size: 200
+  train_batch_size: 200
+  max_source_length: 256
+  max_target_length: 32
